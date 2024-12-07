@@ -10,3 +10,13 @@ var findLUSlength = function(a, b) {
          return Math.max(a.length, b.length);
     }
 };
+
+//Problem-1 Single Number
+//Catogery:Array
+function singleNumber(nums) {
+    let result = 0; // Start with 0
+    for (let num of nums) {
+        result ^= num; // XOR each number with the result
+    }
+    return result; // After all XORs, result will be the single number
+}
